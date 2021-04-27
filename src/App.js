@@ -121,7 +121,15 @@ const App = () => {
                   />
                 </Col>
                 <Col lg={6} md={6}>
-                  <ProjectCard />
+                  <ProjectCard
+                    title='Dog Destinations Website'
+                    subTitle='Next.js, Bootstrap, Firebase Cloud Functions'
+                    text='A Next.js based React site to compliment the app that I have in the App Store and Play Store.'
+                    button1='Live site'
+                    button1ref='https://www.dogdestinations.co.uk'
+                    button2='Code'
+                    button2ref='https://github.com/drewbo1/dd-next-site'
+                  />
                 </Col>
               </Row>
             </div>
