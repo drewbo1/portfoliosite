@@ -110,7 +110,18 @@ const App = () => {
                   />
                 </Col>
                 <Col lg={6} md={6}>
-                  <ProjectCard title='three' />
+                  <ProjectCard
+                    title='Portfolio'
+                    subTitle='React, CSS3, Bootstrap'
+                    text='A portfolio site to showcase my projects. This site was built using React, with React-Bootstrap used to create responsive styling and attractive components. It is deployed through Netlify.'
+                    button1='Live site'
+                    button1ref='https://andy-marshall-portfolio.netlify.app/'
+                    button2='Code'
+                    button2ref='https://github.com/drewbo1/portfoliosite'
+                  />
+                </Col>
+                <Col lg={6} md={6}>
+                  <ProjectCard />
                 </Col>
               </Row>
             </div>
