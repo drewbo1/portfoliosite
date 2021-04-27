@@ -1,8 +1,9 @@
 import React from 'react';
+import './App.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div className='section'>
       <h1>Contact</h1>
     </div>
   );

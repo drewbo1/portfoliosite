@@ -1,0 +1,267 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color:rgb(28, 28, 28);
+}
+
+.dark {
+    background-color: rgb(28, 28, 28)
+}
+
+.medium {
+    background-color: lightblue;
+}
+
+.light {
+    background-color: seashell;
+}
+
+.white {
+    color:white;
+}
+
+.black {
+    color: black;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+}
+.section {
+    min-height: 100vh;
+    
+}
+
+.small-section {
+    min-height: 60vh;
+    
+}
+
+.project-heading {
+    
+    text-align: center;
+    padding: 5rem
+}
+
+.sub-heading {
+    
+    text-align: center;
+}
+
+.hero-image {
+    
+  
+    /* Set a specific height */
+    height: 100vh;
+    
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .header {
+      height: 5rem;
+      flex-direction: row;
+  }
+
+  .header a {
+      padding: 1rem;
+      text-decoration: none;
+  }
+
+  .full-name {
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      padding: 1rem;
+      margin-left: 2rem;
+  }
+
+  .social-icon-box {
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+
+  .devicon-linkedin-plain {
+      font-size: 3rem;
+      
+  }
+
+  .devicon-linkedin-plain:hover {
+    color:darkred;
+    
+}
+
+  .devicon-github-original {
+    font-size: 3rem;
+  } 
+  
+  .devicon-github-original:hover {
+      color: darkred;
+  }
+
+ .fa-envelope {
+    font-size: 3rem;
+    
+ }
+
+ .fa-envelope:hover {
+     color: darkred;
+ }
+
+ .icon-row {
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem;
+ }
+
+ .icon-row a {
+    padding: 1rem;
+    text-decoration: none;
+ }
+
+ .icon-row a:hover {
+     color: darkred;
+ }
+  
+  /* Project cards */
+  
+  .card-row {
+padding-bottom: 5rem;
+    justify-content: center;
+    align-self: center;
+    margin:15px
+
+}
+
+.project-card {
+    height: 25rem;
+    border-radius: 30px;
+    margin-top: 3rem;
+    background-color: white;
+    border-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+     
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project-card .title {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project-card .sub-title {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: darkred;
+}
+
+.project-card .body-text {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+.single-button-box {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.project-card .button-box {
+    flex-direction: row;
+    width: 80%;
+    display: block;
+    position: absolute;
+    bottom: 0.75rem; 
+
+    
+}
+
+.project-card .btn {
+    width: 100%;
+    
+    
+}
+
+.store-button {
+    background-color: black;
+    border-color: black;
+}
+
+@media (min-width: 480px) {
+
+    .hero-image{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/computer.jpg");
+    }
+    }
+ 
+    
+    @media (max-width: 550px) {
+        .hero-image{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/tall-computer.jpg");
+}
+.full-name{
+    font-size: 1rem;
+}
+.devicon-linkedin-plain {
+    font-size: 1.5rem;
+    
+}
+.devicon-github-original {
+    font-size: 1.5rem;
+    
+}
+.fa-envelope {
+    font-size: 1.5rem;
+    
+ }
+ .container {
+     margin: 0;
+ }
+ 
+        }
+        
