@@ -1,17 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../src/components/layout/Header';
 import ProjectCard from './components/layout/ProjectCard';
+import FrontCard from './components/layout/FrontCard';
 
 const App = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const [hovered1, setHovered1] = useState(false);
+  const [hovered2, setHovered2] = useState(false);
+  const [hovered3, setHovered3] = useState(false);
+  const [hovered4, setHovered4] = useState(false);
+  const [hovered5, setHovered5] = useState(false);
+  const [hovered6, setHovered6] = useState(false);
 
   return (
     <Container fluid={true} className='p-0'>
@@ -73,14 +82,33 @@ const App = () => {
               </div>
               <Row className='card-row'>
                 <Col lg={6} md={6}>
-                  <ProjectCard
-                    title='Dog Destinations'
-                    subTitle='React Native, Hooks, Redux, Firebase'
-                    text='Dog Destinations is a multi platform app built with React Native and deployed to both Apple and Google app stores. A user sharing platform for dog owners to share information about locations as well as search locations, rate them and write reviews. Integrates Auth functionality, with Apple, Google and email signup. CRUD actions for the storage of information about users and the locations, image storage and cloud functions.'
-                    singleButton='Code'
-                    androidUrl='https://play.google.com/store/apps/details?id=com.andrewmarshall.dogdestinations'
-                    iOSUrl='https://apps.apple.com/ie/app/dog-destinations/id1534439374#?platform=iphone'
-                  />
+                  <div
+                    onClick={() => {
+                      setHovered1(!hovered1);
+                    }}
+                    onMouseEnter={() => {
+                      setHovered1(!hovered1);
+                    }}
+                    onMouseLeave={() => {
+                      setHovered1(!hovered1);
+                    }}
+                  >
+                    {hovered1 ? (
+                      <ProjectCard
+                        title='Dog Destinations'
+                        subTitle='React Native, Hooks, Redux, Firebase'
+                        text='Dog Destinations is a multi platform app built with React Native and deployed to both Apple and Google app stores. A user sharing platform for dog owners to share information about locations as well as search locations, rate them and write reviews. Integrates Auth functionality, with Apple, Google and email signup. CRUD actions for the storage of information about users and the locations, image storage and cloud functions.'
+                        singleButton='Code'
+                        androidUrl='https://play.google.com/store/apps/details?id=com.andrewmarshall.dogdestinations'
+                        iOSUrl='https://apps.apple.com/ie/app/dog-destinations/id1534439374#?platform=iphone'
+                      />
+                    ) : (
+                      <FrontCard
+                        title='Dog Destinations'
+                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
+                      />
+                    )}
+                  </div>
                 </Col>
               </Row>
               <div className='sub-heading'>
@@ -88,15 +116,31 @@ const App = () => {
               </div>
               <Row className='card-row'>
                 <Col lg={6} md={6}>
-                  <ProjectCard
-                    title='Mrs Marshmallow'
-                    subTitle='HTML5, CSS3, JavaScript, PHP, JQuery, Bootstrap'
-                    text='A website built for the bespoke cake business of a family member. PHP sessions were used to pass information between the pages of the ordering system. Bootstrap was used for responsiveness and component styling. The site includes a JQuery based image gallery and custom JavaScript form validation. The original site was completed in 2016, but it has been refreshed in 2021. Although the business has now ceased trading, the site is still available below.   '
-                    button1='Live site'
-                    button1ref='http://www.mrsmarshmallow.co.uk'
-                    button2='Code'
-                    button2ref='https://github.com/drewbo1/MrsMarshmallow'
-                  />
+                  <div
+                    onClick={() => {
+                      setHovered2(!hovered2);
+                    }}
+                    onMouseEnter={() => {
+                      setHovered2(!hovered2);
+                    }}
+                    onMouseLeave={() => {
+                      setHovered2(!hovered2);
+                    }}
+                  >
+                    {hovered2 ? (
+                      <ProjectCard
+                        title='Mrs Marshmallow'
+                        subTitle='HTML5, CSS3, JavaScript, PHP, JQuery, Bootstrap'
+                        text='A website built for the bespoke cake business of a family member. PHP sessions were used to pass information between the pages of the ordering system. Bootstrap was used for responsiveness and component styling. The site includes a JQuery based image gallery and custom JavaScript form validation. The original site was completed in 2016, but it has been refreshed in 2021. Although the business has now ceased trading, the site is still available below.   '
+                        button1='Live site'
+                        button1ref='http://www.mrsmarshmallow.co.uk'
+                        button2='Code'
+                        button2ref='https://github.com/drewbo1/MrsMarshmallow'
+                      />
+                    ) : (
+                      <FrontCard />
+                    )}
+                  </div>
                 </Col>
                 <Col lg={6} md={6}>
                   <ProjectCard
