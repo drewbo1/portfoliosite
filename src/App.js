@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,10 +16,6 @@ const App = () => {
 
   const [hovered1, setHovered1] = useState(false);
   const [hovered2, setHovered2] = useState(false);
-  const [hovered3, setHovered3] = useState(false);
-  const [hovered4, setHovered4] = useState(false);
-  const [hovered5, setHovered5] = useState(false);
-  const [hovered6, setHovered6] = useState(false);
 
   return (
     <Container fluid={true} className='p-0'>
