@@ -57,6 +57,7 @@ const App = () => {
                     <Image
                       src='https://res.cloudinary.com/dujftalas/image/upload/v1619899788/IMG_4170_kovw7t.jpg'
                       rounded
+                      fluid
                       width='50%'
                     />
                   </div>
