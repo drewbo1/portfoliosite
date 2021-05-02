@@ -25,13 +25,15 @@ const ProjectCard = ({
   iOSUrl,
   androidUrl,
   singleButton,
+  handleClick,
 }) => {
   return (
     <div className='project-card'>
       <div className='title'>{title}</div>
       <div className='sub-title'>{subTitle}</div>
-      <div className='body-text'>{text}</div>
-      <div className='single-button-box'></div>
+      <div className='body-text' onClick={() => handleClick()}>
+        {text}
+      </div>
       <div className='button-box'>
         <Row>
           <Col>

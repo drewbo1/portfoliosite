@@ -16,6 +16,14 @@ html {
     background-color: seashell;
 }
 
+.teal {
+    background-color:#76b4bd;
+}
+
+.white-background {
+    background-color: white;
+}
+
 .white {
     color:white;
 }
@@ -43,6 +51,11 @@ h4 {
 h5 {
     font-size: 0.75rem;
 }
+
+p {
+    font-size: 0.6rem;
+}
+
 .section {
     min-height: 100vh;
     
@@ -242,7 +255,6 @@ padding-bottom: 5rem;
     height: 25rem;
     border-radius: 30px;
     margin-top: 3rem;
-    background-color:#76b4bd;
     border-width: 0;
     width: 100%;
     display: flex;
@@ -252,7 +264,7 @@ padding-bottom: 5rem;
 }
 
 .card-image {
-    width: 200px;
+    width: 40%;
     align-content: center;
     
 }
@@ -261,6 +273,36 @@ padding-bottom: 5rem;
     text-align: center;
     align-content: center;
     
+}
+
+.info-icon-row {
+    flex-direction: row;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0.75rem; 
+    text-align: center;
+    font-size: 2rem;
+}
+
+.return-icon-row {
+    flex-direction: row;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5rem;;
+}
+
+.about-text {
+    text-align: center;
 }
 
 @media (min-width: 480px) {
