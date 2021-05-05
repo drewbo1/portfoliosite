@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Header from '../src/components/layout/Header';
 import ProjectCard from './components/layout/ProjectCard';
 import FrontCard from './components/layout/FrontCard';
+import { Button } from 'bootstrap';
 
 const App = () => {
   useEffect(() => {
@@ -43,6 +44,13 @@ const App = () => {
                 data-aos-duration='2400'
               >
                 <h3>Front End Developer</h3>
+              </div>
+              <div
+                data-aos='fade-in'
+                data-aos-delay='1500'
+                data-aos-duration='2400'
+              >
+                <Button variant='outline-dark'>See my projects</Button>
               </div>
             </div>
           </div>
