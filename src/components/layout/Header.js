@@ -1,14 +1,43 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import '../../App.css';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
     <div className='header'>
       <Row>
-        <div className='full-name mr-auto white'>Andy Marshall</div>
+        <Row className='nav-row mr-auto'>
+          <ul
+            style={{
+              display: 'flex',
+              listStyle: 'none',
+            }}
+          >
+            <li>
+              <Link activeClass='active' to='home' spy={true} smooth={true}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to='me' spy={true} smooth={true}>
+                Me
+              </Link>
+            </li>
+            <li>
+              <Link to='projects' spy={true} smooth={true}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to='contact' spy={true} smooth={true}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </Row>
         <Row className='social-icon-box-row'>
-          <div className='social-icon-box ml-auto'>
+          <div className='social-icon-box'>
             <a href='mailto:ajmarshall@mail.com'>
               <i class='fas fa-envelope white'></i>
             </a>

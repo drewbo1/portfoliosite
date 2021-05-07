@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import Header from '../src/components/layout/Header';
 import ProjectCard from './components/layout/ProjectCard';
 import FrontCard from './components/layout/FrontCard';
-import { Button } from 'bootstrap';
+import Footer from './components/layout/Footer';
 
 const App = () => {
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
     <Container fluid={true} className='p-0'>
       <Row noGutters>
         <Col>
-          <div className='hero-image'>
+          <div className='hero-image' id='home'>
             <Header />
             <div className='hero-text white'>
               <div
@@ -49,12 +49,10 @@ const App = () => {
                 data-aos='fade-in'
                 data-aos-delay='1500'
                 data-aos-duration='2400'
-              >
-                <Button variant='outline-dark'>See my projects</Button>
-              </div>
+              ></div>
             </div>
           </div>
-          <div className='section light'>
+          <div className='section light' id='me'>
             <div className='container'>
               <div className='project-heading black'>
                 <h2>Me</h2>
@@ -83,13 +81,13 @@ const App = () => {
                     </h4>
                     <Row className='icon-row'>
                       <a href='mailto:ajmarshall@mail.com'>
-                        <i class='fas fa-envelope black'></i>
+                        <i className='fas fa-envelope black'></i>
                       </a>
                       <a href='https://linkedin.com/in/andy-j-marshall'>
-                        <i class='devicon-linkedin-plain black'></i>
+                        <i className='devicon-linkedin-plain black'></i>
                       </a>
                       <a href='https://github.com/drewbo1'>
-                        <i class='devicon-github-original black'></i>
+                        <i className='devicon-github-original black'></i>
                       </a>
                     </Row>
                   </div>
@@ -97,7 +95,7 @@ const App = () => {
               </Row>
             </div>
           </div>
-          <div className='section medium'>
+          <div className='section medium' id='projects'>
             <div className='container'>
               <div className='project-heading'>
                 <h2>Projects</h2>
@@ -288,8 +286,12 @@ const App = () => {
               </Row>
             </div>
           </div>
+          <div className='section black' id='contact'>
+            <h2 className='project-heading'>Contact</h2>
+          </div>
         </Col>
       </Row>
+      <Footer />
     </Container>
   );
 };

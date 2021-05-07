@@ -122,6 +122,20 @@ p {
   .social-icon-box {
     margin-right: 2rem;
     padding: 1rem;
+    margin-left: auto;
+  }
+
+  .nav-row li {
+      color: white;
+      padding: 1rem;
+  }
+
+  .nav-row li:hover {
+      color: darkred;
+  }
+
+  .active {
+      color:cornflowerblue;
   }
 
   .devicon-linkedin-plain {
@@ -306,6 +320,13 @@ padding-bottom: 5rem;
     text-align: center;
 }
 
+.footer {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ebf4f6;
+  }
+
 @media (min-width: 480px) {
 
     .hero-image{
@@ -336,6 +357,7 @@ padding-bottom: 5rem;
  .container {
      margin: 0;
  }
+
  
         }
         
