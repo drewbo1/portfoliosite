@@ -348,14 +348,14 @@ padding-bottom: 5rem;
 @media (min-width: 480px) {
 
     .hero-image{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1619639682/computer_uegxqk.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1620685731/computer_ofkb9a.jpg");
     }
     }
  
     
     @media (max-width: 550px) {
         .hero-image{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1619639700/tall-computer_thcbze.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1620686066/tall-computer_wmt1hz.jpg");
 }
 
 .devicon-linkedin-plain {
