@@ -29,7 +29,7 @@ const App = () => {
     <Container fluid={true} className='p-0'>
       <Row noGutters>
         <Col>
-          <div className='hero-image' id='home'>
+          <div className='hero-image' id='home' alt='A laptop on a desk'>
             <Header />
             <div className='hero-text white'>
               <div
@@ -44,7 +44,7 @@ const App = () => {
                 data-aos-delay='1200'
                 data-aos-duration='2400'
               >
-                <h3>Front End Developer</h3>
+                <h2>Front End Developer</h2>
               </div>
               <div
                 data-aos='fade-in'
@@ -66,6 +66,7 @@ const App = () => {
                       rounded
                       fluid
                       width='50%'
+                      alt='A photo of me'
                     />
                   </div>
                 </Col>
@@ -131,6 +132,7 @@ const App = () => {
                         title='Dog Destinations'
                         color='teal'
                         isTouch={isTouch}
+                        alt='Dog Destinations logo'
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
                         handleClick={() => {
                           if (isTouch) {
@@ -175,6 +177,7 @@ const App = () => {
                         title='Mrs Marshmallow'
                         color='white-background'
                         isTouch={isTouch}
+                        alt='Mrs Marshmallow logo'
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619902083/Logo_1_qzdnr2.png'
                         handleClick={() => {
                           if (isTouch) {
@@ -213,6 +216,7 @@ const App = () => {
                       <FrontCard
                         title='Learn to Drive NI'
                         color='white-background'
+                        alt='Learn to drive ni logo'
                         isTouch={isTouch}
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619903217/logo_lfi0vi.png'
                         handleClick={() => {
@@ -252,6 +256,7 @@ const App = () => {
                       <FrontCard
                         title='Portfolio'
                         color='white-background'
+                        alt='Andy Marshall logo'
                         isTouch={isTouch}
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1620682833/android-chrome-512x512_xdtd70.png'
                         handleClick={() => {
@@ -292,6 +297,7 @@ const App = () => {
                         title='Dog Destinations'
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
                         color='white-background'
+                        alt='Dog Destinations logo'
                         isTouch={isTouch}
                         handleClick={() => {
                           if (isTouch) {
