@@ -83,10 +83,13 @@ const App = () => {
                       looking for a graduate or junior web developer role.
                     </h4>
                     <Row className='icon-row'>
-                      <a href='https://linkedin.com/in/andy-j-marshall'>
+                      <a
+                        href='https://linkedin.com/in/andy-j-marshall'
+                        alt='LinkedIn logo'
+                      >
                         <i className='devicon-linkedin-plain black'></i>
                       </a>
-                      <a href='https://github.com/drewbo1'>
+                      <a href='https://github.com/drewbo1' alt='Github logo'>
                         <i className='devicon-github-original black'></i>
                       </a>
                     </Row>

@@ -11,10 +11,13 @@ const Header = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Brand>
           <div className='social-icon-box mr-auto'>
-            <a href='https://linkedin.com/in/andy-j-marshall'>
+            <a
+              href='https://linkedin.com/in/andy-j-marshall'
+              alt='LinkedIn logo'
+            >
               <i class='devicon-linkedin-plain white'></i>
             </a>
-            <a href='https://github.com/drewbo1'>
+            <a href='https://github.com/drewbo1' alt='Github logo'>
               <i class='devicon-github-original white'></i>
             </a>
           </div>
