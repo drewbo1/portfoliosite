@@ -72,7 +72,7 @@ const App = () => {
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <div className='about-text black'>
-                    <h4>
+                    <p>
                       I am a Front End web and app developer. I love creating
                       beautiful, responsive pages and learning new skills and
                       technologies. I have a particular interest in
@@ -81,7 +81,7 @@ const App = () => {
                       contact me if you would like to know more about my
                       projects, or for any opportunities you may have. I am
                       looking for a graduate or junior web developer role.
-                    </h4>
+                    </p>
                     <Row className='icon-row'>
                       <a
                         href='https://linkedin.com/in/andy-j-marshall'

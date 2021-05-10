@@ -3,14 +3,15 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 
-const FrontCard = ({ title, imageUrl, handleClick, color, isTouch }) => {
+const FrontCard = ({ title, imageUrl, handleClick, color, isTouch, alt }) => {
   const cardColor = `plain-card ${color}`;
+  const altText = `${alt}`;
   return (
     <div className={cardColor}>
       <Col className='card-col'>
         <Row className='plain-card-row'>
           <div className='card-image'>
-            <Image src={imageUrl} fluid />
+            <Image src={imageUrl} fluid alt={altText} />
           </div>
         </Row>
         <Row className='plain-card-row'>
