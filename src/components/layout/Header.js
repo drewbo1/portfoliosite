@@ -1,46 +1,16 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import '../../App.css';
 import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
     <div className='header'>
-      <Row>
-        <Row className='nav-row mr-auto'>
-          <ul
-            style={{
-              display: 'flex',
-              listStyle: 'none',
-            }}
-          >
-            <li>
-              <Link activeClass='active' to='home' spy={true} smooth={true}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to='me' spy={true} smooth={true}>
-                Me
-              </Link>
-            </li>
-            <li>
-              <Link to='projects' spy={true} smooth={true}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to='contact' spy={true} smooth={true}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </Row>
-        <Row className='social-icon-box-row'>
-          <div className='social-icon-box'>
-            <a href='mailto:ajmarshall@mail.com'>
-              <i class='fas fa-envelope white'></i>
-            </a>
+      <Navbar expand='lg' variant='dark'>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Brand>
+          <div className='social-icon-box mr-auto'>
             <a href='https://linkedin.com/in/andy-j-marshall'>
               <i class='devicon-linkedin-plain white'></i>
             </a>
@@ -48,8 +18,32 @@ const Header = () => {
               <i class='devicon-github-original white'></i>
             </a>
           </div>
-        </Row>
-      </Row>
+        </Navbar.Brand>
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='ml-auto'>
+            <li>
+              <Link activeClass='active' to='home' spy={true} smooth={true}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link activeClass='active' to='me' spy={true} smooth={true}>
+                Me
+              </Link>
+            </li>
+            <li>
+              <Link activeClass='active' to='projects' spy={true} smooth={true}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link activeClass='active' to='contact' spy={true} smooth={true}>
+                Contact
+              </Link>
+            </li>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 };

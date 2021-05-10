@@ -10,6 +10,7 @@ import Header from '../src/components/layout/Header';
 import ProjectCard from './components/layout/ProjectCard';
 import FrontCard from './components/layout/FrontCard';
 import Footer from './components/layout/Footer';
+import Contact from './components/layout/Contact';
 
 const App = () => {
   useEffect(() => {
@@ -36,7 +37,7 @@ const App = () => {
                 data-aos-delay='500'
                 data-aos-duration='2000'
               >
-                <h1>Andy Marshall</h1>
+                <h1>I'm Andy Marshall</h1>
               </div>
               <div
                 data-aos='fade-in'
@@ -72,17 +73,15 @@ const App = () => {
                   <div className='about-text black'>
                     <h4>
                       I am a Front End web and app developer. I love creating
-                      beautiful, responsive pages and learning new technologies.
-                      I have a particular interest in JavaScript-based libraries
-                      such as React and React Native. I love to solve problems
-                      and talk coding. Feel free to contact me if you would like
-                      to know more about my projects, or for any opportunities
-                      you may have.
+                      beautiful, responsive pages and learning new skills and
+                      technologies. I have a particular interest in
+                      JavaScript-based libraries such as React and React Native.
+                      I love to solve problems and talk coding. Feel free to
+                      contact me if you would like to know more about my
+                      projects, or for any opportunities you may have. I am
+                      looking for a graduate or junior web developer role.
                     </h4>
                     <Row className='icon-row'>
-                      <a href='mailto:ajmarshall@mail.com'>
-                        <i className='fas fa-envelope black'></i>
-                      </a>
                       <a href='https://linkedin.com/in/andy-j-marshall'>
                         <i className='devicon-linkedin-plain black'></i>
                       </a>
@@ -288,6 +287,7 @@ const App = () => {
           </div>
           <div className='section black' id='contact'>
             <h2 className='project-heading'>Contact</h2>
+            <Contact />
           </div>
         </Col>
       </Row>

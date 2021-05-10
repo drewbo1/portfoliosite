@@ -9,7 +9,7 @@ const popover = (
   <Popover id='popover-basic'>
     <Popover.Title as='h3'>Code</Popover.Title>
     <Popover.Content>
-      As this is a live project, access to the code is only available on request
+      This code is in a private repository. Access can be granted on request.
     </Popover.Content>
   </Popover>
 );
