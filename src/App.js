@@ -121,7 +121,9 @@ const App = () => {
                         androidUrl='https://play.google.com/store/apps/details?id=com.andrewmarshall.dogdestinations'
                         iOSUrl='https://apps.apple.com/ie/app/dog-destinations/id1534439374#?platform=iphone'
                         handleClick={() => {
-                          setHovered1(!hovered1);
+                          if (isTouch) {
+                            setHovered1(!hovered1);
+                          }
                         }}
                       />
                     ) : (
@@ -131,7 +133,9 @@ const App = () => {
                         isTouch={isTouch}
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
                         handleClick={() => {
-                          setHovered1(!hovered1);
+                          if (isTouch) {
+                            setHovered1(!hovered1);
+                          }
                         }}
                       />
                     )}
@@ -161,7 +165,9 @@ const App = () => {
                         button2='Code'
                         button2ref='https://github.com/drewbo1/MrsMarshmallow'
                         handleClick={() => {
-                          setHovered2(!hovered2);
+                          if (isTouch) {
+                            setHovered2(!hovered2);
+                          }
                         }}
                       />
                     ) : (
@@ -171,7 +177,9 @@ const App = () => {
                         isTouch={isTouch}
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619902083/Logo_1_qzdnr2.png'
                         handleClick={() => {
-                          setHovered2(!hovered2);
+                          if (isTouch) {
+                            setHovered2(!hovered2);
+                          }
                         }}
                       />
                     )}
@@ -196,7 +204,9 @@ const App = () => {
                         button2='Code'
                         button2ref='https://github.com/drewbo1/learntodrive'
                         handleClick={() => {
-                          setHovered3(!hovered3);
+                          if (isTouch) {
+                            setHovered3(!hovered3);
+                          }
                         }}
                       />
                     ) : (
@@ -206,7 +216,9 @@ const App = () => {
                         isTouch={isTouch}
                         imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619903217/logo_lfi0vi.png'
                         handleClick={() => {
-                          setHovered3(!hovered3);
+                          if (isTouch) {
+                            setHovered3(!hovered3);
+                          }
                         }}
                       />
                     )}
@@ -224,14 +236,16 @@ const App = () => {
                     {hovered4 ? (
                       <ProjectCard
                         title='Portfolio'
-                        subTitle='React, Hooks, CSS3, Bootstrap'
-                        text='A portfolio site to showcase my projects. This site was built using React, with React-Bootstrap used to create responsive styling and attractive components. It is deployed through Netlify and the images are hosted with Cloudinary to improve loading times.'
+                        subTitle='React, Hooks, CSS3, Bootstrap, Email.js'
+                        text='A portfolio site to showcase my projects. This site was built using React, with React-Bootstrap used to create responsive styling and attractive components. It is deployed through Netlify and the images are hosted with Cloudinary to improve loading times. It uses the Email.js library for the contact form.'
                         button1='Live site'
                         button1ref='https://andy-marshall-portfolio.netlify.app/'
                         button2='Code'
                         button2ref='https://github.com/drewbo1/portfoliosite'
                         handleClick={() => {
-                          setHovered4(!hovered4);
+                          if (isTouch) {
+                            setHovered4(!hovered4);
+                          }
                         }}
                       />
                     ) : (
@@ -239,9 +253,11 @@ const App = () => {
                         title='Portfolio'
                         color='white-background'
                         isTouch={isTouch}
-                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619899788/IMG_4170_kovw7t.jpg'
+                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1620682833/android-chrome-512x512_xdtd70.png'
                         handleClick={() => {
-                          setHovered4(!hovered4);
+                          if (isTouch) {
+                            setHovered4(!hovered4);
+                          }
                         }}
                       />
                     )}
@@ -259,14 +275,16 @@ const App = () => {
                     {hovered5 ? (
                       <ProjectCard
                         title='Dog Destinations Website'
-                        subTitle='Next.js, Bootstrap, Firebase Cloud Functions'
-                        text='A Next.js based React site to compliment the app that I have in the App Store and Play Store.'
+                        subTitle='Next.js, Hooks, Bootstrap, Firebase Cloud Functions'
+                        text='A React site to compliment the app that I have in the App Store and Play Store. The site is built using Next.js and includes the use of hooks, as well as Firebase cloud functions to send the contact email.'
                         button1='Live site'
                         button1ref='https://www.dogdestinations.co.uk'
                         button2='Code'
                         button2ref='https://github.com/drewbo1/dd-next-site'
                         handleClick={() => {
-                          setHovered5(!hovered5);
+                          if (isTouch) {
+                            setHovered5(!hovered5);
+                          }
                         }}
                       />
                     ) : (
@@ -276,7 +294,9 @@ const App = () => {
                         color='white-background'
                         isTouch={isTouch}
                         handleClick={() => {
-                          setHovered5(!hovered5);
+                          if (isTouch) {
+                            setHovered5(!hovered5);
+                          }
                         }}
                       />
                     )}
