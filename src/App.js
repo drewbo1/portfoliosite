@@ -62,7 +62,7 @@ const App = () => {
                 <Col lg={6} md={6} sm={12}>
                   <div className='about-image'>
                     <Image
-                      src='https://res.cloudinary.com/dujftalas/image/upload/v1619899788/IMG_4170_kovw7t.jpg'
+                      src='https://res.cloudinary.com/dujftalas/image/upload/v1620764498/profile-image_v5ciwz.jpg'
                       rounded
                       fluid
                       width='50%'
