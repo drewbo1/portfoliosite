@@ -56,7 +56,7 @@ const App = () => {
           <div className='section light' id='me'>
             <div className='container'>
               <div className='project-heading black'>
-                <h2>Me</h2>
+                <h2>About me</h2>
               </div>
               <Row className='about-row'>
                 <Col lg={6} md={6} sm={12}>
@@ -65,7 +65,7 @@ const App = () => {
                       src='https://res.cloudinary.com/dujftalas/image/upload/v1620764498/profile-image_v5ciwz.jpg'
                       rounded
                       fluid
-                      width='50%'
+                      width='100%'
                       alt='A photo of me'
                     />
                   </div>
@@ -96,6 +96,24 @@ const App = () => {
                   </div>
                 </Col>
               </Row>
+              <Row className='sub-heading'>
+                <div>
+                  <h3>Skills and technologies used</h3>
+                </div>
+              </Row>
+              <Row className='skill-icon-row'>
+                <i className='devicon-bootstrap-plain'></i>
+                <i className='devicon-css3-plain'></i>
+                <i className='devicon-firebase-plain'></i>
+                <i className='devicon-git-plain'></i>
+                <i className='devicon-html5-plain'></i>
+                <i className='devicon-javascript-plain'></i>
+                <i className='devicon-jquery-plain'></i>
+                <i className='devicon-nextjs-original'></i>
+                <i className='devicon-php-plain'></i>
+                <i className='devicon-react-original'></i>
+                <i className='devicon-redux-original'></i>
+              </Row>
             </div>
           </div>
           <div className='section medium' id='projects'>
@@ -104,7 +122,7 @@ const App = () => {
                 <h2>Projects</h2>
               </div>
               <div className='sub-heading'>
-                <h3>App</h3>
+                <h3>React Native App</h3>
               </div>
               <Row className='card-row'>
                 <Col lg={6} md={6}>

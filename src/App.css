@@ -190,6 +190,18 @@ p {
  .icon-row a:hover {
      color: darkred;
  }
+
+ .skill-icon-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 3rem;
+ }
+
+ .skill-icon-row i {
+     padding: 1rem;
+ }
   
   /* Project cards */
   
@@ -319,11 +331,13 @@ padding-bottom: 5rem;
 
 .about-image {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-content: center;
     margin-bottom: 5rem;
     max-height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+    
 }
 
 .about-text {
@@ -391,10 +405,18 @@ padding-bottom: 5rem;
     font-size: 1.2rem;
 }
 
-.contact-card {
-    margin-top: 2rem;
+.about-image {
+    max-height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
- 
+.contact-card {
+    margin-top: 25%;
+}
+
+ .project-heading {
+     padding: 2rem;
+ }
         }
         
