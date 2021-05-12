@@ -3,10 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const updateInput = (e) => {
     setFormData({
@@ -15,11 +17,14 @@ const Contact = () => {
     });
   };
 
+  const handleIsLoadingToggle = () => {
+    setIsLoading((isLoading) => !isLoading);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     const { name, email, message } = formData;
-
+    handleIsLoadingToggle();
     let templateParams = {
       from_name: name,
       from_email: email,
@@ -38,11 +43,13 @@ const Contact = () => {
           console.log(result.text);
           if (result.text === 'OK') {
             alert('Your mail is sent!');
+            handleIsLoadingToggle();
           }
         },
         (error) => {
           console.log(error.text);
           alert('There was a problem, your mail could not be sent.');
+          handleIsLoadingToggle();
         }
       );
     clearForm();
@@ -84,7 +91,7 @@ const Contact = () => {
             <Form.Group controlId='formMessage'>
               <Form.Label>Message</Form.Label>
               <Form.Control
-                type='text'
+                as='textarea'
                 name='message'
                 placeholder='Message'
                 onChange={updateInput}
@@ -92,9 +99,13 @@ const Contact = () => {
                 rows={3}
               />
             </Form.Group>
-            <Button variant='primary' type='submit'>
-              Submit
-            </Button>
+            {isLoading ? (
+              <Spinner animation='border' variant='dark' />
+            ) : (
+              <Button variant='dark' type='submit'>
+                Submit
+              </Button>
+            )}
           </Form>
         </Card>
       </Container>

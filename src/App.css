@@ -373,27 +373,28 @@ padding-bottom: 5rem;
     
     @media (max-width: 550px) {
         .hero-image{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1620686066/tall-computer_wmt1hz.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dujftalas/image/upload/v1620686066/tall-computer_wmt1hz.jpg");
 }
 
 .devicon-linkedin-plain {
-    font-size: 1.5rem;
+    font-size: 2rem;
     
 }
 .devicon-github-original {
-    font-size: 1.5rem;
+    font-size: 2rem;
     
 }
-.fa-envelope {
-    font-size: 1.5rem;
-    
- }
+
  .container {
      margin: 0;
  }
 
+ .project-card .title {
+     font-size: 1.5rem;
+ }
+
  .project-card .body-text {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 0.7rem;
 }
 
@@ -418,5 +419,19 @@ padding-bottom: 5rem;
  .project-heading {
      padding: 2rem;
  }
+
+ .hero-text h1 {
+     font-size: 2.5rem;
+ }
+
+ .hero-text h2 {
+     font-size: 1.2rem;
+ }
+
+ .card-image {
+     padding-top: 2rem;
+     width: 65%;
+ }
+
         }
         

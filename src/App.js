@@ -74,7 +74,7 @@ const App = () => {
                   <div className='about-text black'>
                     <p>
                       I am a Front End web and app developer. I love creating
-                      beautiful, responsive pages and learning new skills and
+                      attractive, responsive pages and learning new skills and
                       technologies. I have a particular interest in
                       JavaScript-based libraries such as React and React Native.
                       I love to solve problems and talk coding. Feel free to
@@ -96,23 +96,23 @@ const App = () => {
                   </div>
                 </Col>
               </Row>
-              <Row className='sub-heading'>
-                <div>
-                  <h3>Skills and technologies used</h3>
-                </div>
-              </Row>
+
+              <div className='sub-heading'>
+                <h4>Skills and technologies used</h4>
+              </div>
+
               <Row className='skill-icon-row'>
-                <i className='devicon-bootstrap-plain'></i>
-                <i className='devicon-css3-plain'></i>
-                <i className='devicon-firebase-plain'></i>
-                <i className='devicon-git-plain'></i>
                 <i className='devicon-html5-plain'></i>
                 <i className='devicon-javascript-plain'></i>
+                <i className='devicon-css3-plain'></i>
+                <i className='devicon-bootstrap-plain'></i>
                 <i className='devicon-jquery-plain'></i>
-                <i className='devicon-nextjs-original'></i>
                 <i className='devicon-php-plain'></i>
                 <i className='devicon-react-original'></i>
                 <i className='devicon-redux-original'></i>
+                <i className='devicon-nextjs-original'></i>
+                <i className='devicon-firebase-plain'></i>
+                <i className='devicon-git-plain'></i>
               </Row>
             </div>
           </div>
@@ -334,6 +334,24 @@ const App = () => {
           </div>
           <div className='section black' id='contact'>
             <h2 className='project-heading'>Contact</h2>
+            <div className='about-text black'>
+              <p>
+                Feel free to contact me to discuss my projects or for any role
+                you may have available, using this form or any of the social
+                channels
+              </p>
+            </div>
+            <Row className='icon-row'>
+              <a
+                href='https://linkedin.com/in/andy-j-marshall'
+                alt='LinkedIn logo'
+              >
+                <i className='devicon-linkedin-plain black'></i>
+              </a>
+              <a href='https://github.com/drewbo1' alt='Github logo'>
+                <i className='devicon-github-original black'></i>
+              </a>
+            </Row>
             <Contact />
           </div>
         </Col>
