@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Popover from 'react-bootstrap/Popover';
+import PropTypes from 'prop-types';
 
 const popover = (
   <Popover id='popover-basic'>
@@ -86,6 +87,20 @@ const ProjectCard = ({
       </div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  button1: PropTypes.string,
+  button1ref: PropTypes.string,
+  button2: PropTypes.string,
+  button2ref: PropTypes.string,
+  iOSUrl: PropTypes.string,
+  androidUrl: PropTypes.string,
+  singleButton: PropTypes.string,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;

@@ -2,6 +2,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
+import PropTypes from 'prop-types';
 
 const FrontCard = ({ title, imageUrl, handleClick, color, isTouch, alt }) => {
   const cardColor = `plain-card ${color}`;
@@ -27,6 +28,15 @@ const FrontCard = ({ title, imageUrl, handleClick, color, isTouch, alt }) => {
       </Col>
     </div>
   );
+};
+
+FrontCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+  isTouch: PropTypes.bool.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default FrontCard;
