@@ -154,7 +154,7 @@ const App = () => {
                         color='teal'
                         isTouch={isTouch}
                         alt='Dog Destinations logo'
-                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
+                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1622472450/logo2black_kn3nkw.png'
                         handleClick={() => {
                           if (isTouch) {
                             setHovered1(!hovered1);
@@ -316,7 +316,7 @@ const App = () => {
                     ) : (
                       <FrontCard
                         title='Dog Destinations'
-                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1619639711/logo2black_kn3nkw.png'
+                        imageUrl='https://res.cloudinary.com/dujftalas/image/upload/v1622472450/logo2black_kn3nkw.png'
                         color='white-background'
                         alt='Dog Destinations logo'
                         isTouch={isTouch}
