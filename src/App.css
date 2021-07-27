@@ -363,7 +363,7 @@ padding-bottom: 5rem;
 
   
 
-@media (min-width: 480px) {
+@media (min-width: 550px) {
 
     .hero-image{
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/dujftalas/image/upload/v1620685731/computer_ofkb9a.jpg");
