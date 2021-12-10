@@ -79,8 +79,7 @@ const App = () => {
                       JavaScript-based libraries such as React and React Native.
                       I love to solve problems and talk coding. Feel free to
                       contact me if you would like to know more about my
-                      projects, or for any opportunities you may have. I am
-                      looking for a graduate or junior web developer role.
+                      projects.
                     </p>
                     <Row className='icon-row'>
                       <a
@@ -113,6 +112,8 @@ const App = () => {
                 <i className='devicon-nextjs-original'></i>
                 <i className='devicon-firebase-plain'></i>
                 <i className='devicon-git-plain'></i>
+                <i className='devicon-mysql-plain'></i>
+                <i className='devicon-mongodb-plain'></i>
               </Row>
             </div>
           </div>
@@ -183,8 +184,6 @@ const App = () => {
                         title='Mrs Marshmallow'
                         subTitle='HTML5, CSS3, JavaScript, PHP, JQuery, Bootstrap'
                         text='A website built for the bespoke cake business of a family member. PHP sessions were used to pass information between the pages of the ordering system. Bootstrap was used for responsiveness and component styling. The site includes a JQuery based image gallery and custom JavaScript form validation.'
-                        button1='Live site'
-                        button1ref='http://www.mrsmarshmallow.co.uk'
                         button2='Code'
                         button2ref='https://github.com/drewbo1/MrsMarshmallow'
                         handleClick={() => {
@@ -223,8 +222,6 @@ const App = () => {
                         title='Learn to Drive NI'
                         subTitle='HTML5, CSS3, JavaScript, PHP, mySQL'
                         text='A website design for a way to search for driving instructors in Northern Ireland. Uses Google Maps Geocode API to centre map on entered postcode and loads information from mySQL database. This information is used to populate map with custom markers and complete a  table of information about the locations.  '
-                        button1='Live site'
-                        button1ref='http://www.marshmallowwebdesign.co.uk/learn-to-drive-ni/index.php'
                         button2='Code'
                         button2ref='https://github.com/drewbo1/learntodrive'
                         handleClick={() => {
