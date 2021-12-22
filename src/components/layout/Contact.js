@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
-import emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
@@ -31,12 +31,15 @@ const Contact = () => {
       to_name: 'Andy',
       message: message,
     };
+    const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_EMAIL_USER_ID;
     emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-        formData,
-        process.env.REACT_APP_EMAIL_USER_ID
+      .send(
+        serviceId,
+        templateId,
+        templateParams,
+        userId,
       )
       .then(
         (result) => {
