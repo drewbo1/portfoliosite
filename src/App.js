@@ -336,8 +336,7 @@ const App = () => {
             <h2 className='project-heading'>Contact</h2>
             <div className='about-text black'>
               <p>
-                Feel free to contact me to discuss my projects or for any role
-                you may have available, using this form or any of the social
+                Feel free to contact me to discuss my projects, using this form or any of the social
                 channels
               </p>
             </div>
