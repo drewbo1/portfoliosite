@@ -31,15 +31,12 @@ const Contact = () => {
       to_name: 'Andy',
       message: message,
     };
-    const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
-    const userId = process.env.REACT_APP_EMAIL_USER_ID;
     emailjs
       .send(
-        serviceId,
-        templateId,
+        "service_3c0z2j7",
+        "template_rlo5a26",
         templateParams,
-        userId,
+        "user_k5sE5uKKb01pdUWenR2Kw",
       )
       .then(
         (result) => {
